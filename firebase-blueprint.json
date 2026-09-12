@@ -1,0 +1,104 @@
+
+{
+  "entities": {
+    "LandListing": {
+      "title": "LandListing",
+      "type": "object",
+      "description": "Represents a Sunpak Estate land project.",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "number" },
+        "location": { "type": "string" },
+        "size": { "type": "string" },
+        "titleStatus": { "type": "string", "enum": ["Ready", "In Process", "Freehold"] },
+        "categoryDisplayName": { "type": "string" },
+        "categories": { "type": "array", "items": { "type": "string" } },
+        "description": { "type": "string" },
+        "images": { 
+          "type": "array", 
+          "items": { 
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "url": { "type": "string" },
+              "hint": { "type": "string" }
+            }
+          }
+        },
+        "features": { "type": "array", "items": { "type": "string" } },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "BlogPost": {
+      "title": "BlogPost",
+      "type": "object",
+      "description": "A blog article for Sunpak Estate.",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "excerpt": { "type": "string" },
+        "author": { "type": "string" },
+        "imageId": { "type": "string" },
+        "category": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "Booking": {
+      "title": "Booking",
+      "type": "object",
+      "description": "A site visit booking request.",
+      "properties": {
+        "fullName": { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "propertyName": { "type": "string" },
+        "visitDate": { "type": "string" },
+        "leadType": { "type": "string" }
+      }
+    },
+    "GalleryImage": {
+      "title": "GalleryImage",
+      "type": "object",
+      "description": "An image in the Sunpak Estate gallery.",
+      "properties": {
+        "id": { "type": "string" },
+        "url": { "type": "string" },
+        "caption": { "type": "string" },
+        "category": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  },
+  "auth": {
+    "providers": ["password", "google"]
+  },
+  "firestore": {
+    "/vehicles/{vehicleId}": {
+      "schema": "#/entities/LandListing",
+      "description": "Property listings collection (labeled vehicles for legacy compatibility)."
+    },
+    "/blogs/{blogId}": {
+      "schema": "#/entities/BlogPost",
+      "description": "Collection for blog posts."
+    },
+    "/bookings/{bookingId}": {
+      "schema": "#/entities/Booking",
+      "description": "User leads and site visit requests."
+    },
+    "/hero-slides/{slideId}": {
+      "schema": "object",
+      "description": "Customizable homepage hero slides."
+    },
+    "/roles_admin/{userId}": {
+      "schema": "object",
+      "description": "Admin role assignments."
+    },
+    "/gallery/{imageId}": {
+      "schema": "#/entities/GalleryImage",
+      "description": "Public site gallery images."
+    }
+  }
+}

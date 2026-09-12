@@ -1,0 +1,154 @@
+{
+  "placeholderImages": [
+    {
+      "id": "site-logo",
+      "description": "The main company logo for Sunpak Estate.",
+      "imageUrl": "/app-assets/logo.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "hero-1",
+      "description": "A beautiful sunset over a vast Kenyan savannah plot of land.",
+      "imageUrl": "/app-assets/slider main.jpeg",
+      "imageHint": "land landscape"
+    },
+    {
+      "id": "hero-2",
+      "description": "A family standing on their newly purchased land, smiling.",
+      "imageUrl": "/app-assets/hero image.jpeg",
+      "imageHint": "happy land owners"
+    },
+    {
+      "id": "about-us-hero",
+      "description": "Sunpak Estate office team working with architectural plans.",
+      "imageUrl": "/app-assets/slider main.jpeg",
+      "imageHint": "real estate office"
+    },
+    {
+      "id": "listing-Konza",
+      "description": "Konza Prime Project Area",
+      "imageUrl": "/app-assets/Konza Gardens Phase 6.jpeg.png",
+      "imageHint": "konza land"
+    },
+    {
+      "id": "listing-isinya-hwy",
+      "description": "Isinya Highway Commercial Plots",
+      "imageUrl": "/app-assets/isinya highway sunpak.png",
+      "imageHint": "highway plots"
+    },
+    {
+      "id": "listing-kisaju-4",
+      "description": "Kisaju Gardens Phase 4",
+      "imageUrl": "/app-assets/kisaju gardens 4 sunpak.png",
+      "imageHint": "kisaju plots"
+    },
+    {
+      "id": "listing-lenchani-4",
+      "description": "Lenchani Gardens Phase 4",
+      "imageUrl": "/app-assets/lenchani phase 4.jpeg",
+      "imageHint": "kitengela plots"
+    },
+    {
+      "id": "listing-mbuni",
+      "description": "Mbuni Gardens Kitengela",
+      "imageUrl": "/app-assets/Mbuni Gardens Kitengela.jpeg",
+      "imageHint": "residential plots"
+    },
+    {
+      "id": "listing-diaspora",
+      "description": "Diaspora Gardens Isinya",
+      "imageUrl": "/app-assets/Diaspora Gardens Isinya.jpeg",
+      "imageHint": "isinya plots"
+    },
+    {
+      "id": "listing-amani",
+      "description": "Amani Mooi Kisaju Project",
+      "imageUrl": "/app-assets/Amani Gardens Mooi Kisaju.jpeg",
+      "imageHint": "amani mooi"
+    },
+    {
+      "id": "listing-hotsprings",
+      "description": "Maai Mahiu Project Plots",
+      "imageUrl": "/app-assets/Hotsprings Gardens Mai Mahiu.jpeg",
+      "imageHint": "maai mahiu"
+    },
+    {
+      "id": "listing-juja-farm",
+      "description": "Juja Farm Project",
+      "imageUrl": "/app-assets/Juja Farm Kwa Murage.jpeg",
+      "imageHint": "juja plots"
+    },
+    {
+      "id": "listing-makutano",
+      "description": "Makutano Mwea Commercial Plots",
+      "imageUrl": "/app-assets/makutano mwea (2).jpeg",
+      "imageHint": "mwea plots"
+    },
+    {
+      "id": "listing-lenchani-9",
+      "description": "Lenchani Phase 9 Plots",
+      "imageUrl": "/app-assets/Lenchani Gardens Phase 9.jpeg",
+      "imageHint": "isinya land"
+    },
+    {
+      "id": "listing-karaba",
+      "description": "Mwea Karaba Agricultural Land",
+      "imageUrl": "/app-assets/makutano karaba(2).jpeg",
+      "imageHint": "mwea plots"
+    },
+    {
+      "id": "listing-crystal",
+      "description": "Ruiru Prime Project",
+      "imageUrl": "/app-assets/ruiru plots.jpeg",
+      "imageHint": "ruiru land"
+    },
+    {
+      "id": "listing-syokimau",
+      "description": "Syokimau Viraj Gardens Plots",
+      "imageUrl": "/app-assets/Syokimau Viraj Gardens.jpeg",
+      "imageHint": "syokimau plots"
+    },
+    {
+      "id": "listing-kiserian",
+      "description": "Vintage Gardens Kiserian",
+      "imageUrl": "/app-assets/Vintage Gardens Kiserian.jpeg",
+      "imageHint": "kiserian plots"
+    },
+    {
+      "id": "listing-goodhope",
+      "description": "Goodhope Gardens Kitengela",
+      "imageUrl": "/app-assets/Goodhope Gardens Kitengela.jpeg",
+      "imageHint": "kitengela goodhope"
+    },
+    {
+      "id": "listing-empakasi",
+      "description": "Empakasi Gardens Phase 2",
+      "imageUrl": "/app-assets/Empakasi Gardens phase 2.jpeg",
+      "imageHint": "empakasi plots"
+    },
+    {
+      "id": "award-mizani",
+      "description": "Mizani CEO of the Year Award 2025",
+      "imageUrl": "/app-assets/mizani ceo of the year 2025.jpeg",
+      "imageHint": "ceo award"
+    },
+    {
+      "id": "award-starbrands-ceo",
+      "description": "Starbrands CEO of the Year Award",
+      "imageUrl": "/app-assets/starbrands CEO of the year.jpeg",
+      "imageHint": "starbrands ceo award"
+    },
+    {
+      "id": "award-starbrands-group",
+      "description": "Starbrands Awards Group Recognition",
+      "imageUrl": "/app-assets/starbrands awards group.jpeg",
+      "imageHint": "starbrands group award"
+    },
+    {
+      "id": "award-consumer",
+      "description": "Consumer Choice Land Awards",
+      "imageUrl": "/app-assets/consumer awards.jpeg",
+      "imageHint": "consumer awards"
+    }
+  ]
+}

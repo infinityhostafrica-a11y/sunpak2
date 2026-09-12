@@ -1,0 +1,7 @@
+ ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+   ▲ Next.js 15.5.9
+   - Local:        http://localhost:3000
+   - Network:      http://169.254.8.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 648ms

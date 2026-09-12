@@ -1,0 +1,83 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- Helper Functions ---
+
+    /**
+     * @description Checks if the user is authenticated.
+     */
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    /**
+     * @description Explicitly grants admin access to the primary authorized email.
+     * Checks both standard email claim and the firebase token email.
+     */
+    function isSuperAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == "eternetnetworkskenya@gmail.com" ||
+        request.auth.token.firebase.identities.email[0] == "eternetnetworkskenya@gmail.com"
+      );
+    }
+
+    /** 
+     * @description Verifies if the authenticated user is the super admin or has an explicit admin role.
+     */
+    function isAdmin() {
+      return isSuperAdmin() || exists(/databases/$(database)/documents/roles_admin/$(request.auth.uid));
+    }
+
+    // --- Collection Rules ---
+
+    /**
+     * @description Rules for Property listings.
+     */
+    match /vehicles/{vehicleId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    /**
+     * @description Rules for Blog Posts and news items.
+     */
+    match /blogs/{blogId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    /**
+     * @description Rules for Site Visit bookings.
+     */
+    match /bookings/{bookingId} {
+      allow create: if true; // Public can submit bookings
+      allow read, update, delete: if isAdmin(); // Only admins can see/manage leads
+    }
+
+    /**
+     * @description Rules for Homepage Hero slides.
+     */
+    match /hero-slides/{slideId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    /**
+     * @description Rules for Gallery images.
+     */
+    match /gallery/{imageId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    /**
+     * @description Rules for Admin Role mapping.
+     */
+    match /roles_admin/{userId} {
+      allow get: if isSignedIn() && (request.auth.uid == userId || isSuperAdmin());
+      allow list, write: if isSuperAdmin();
+    }
+  }
+}
+// Deployment Trigger: Finalized Sunpak Estate brand synchronization and refined admin permissions for eternity.

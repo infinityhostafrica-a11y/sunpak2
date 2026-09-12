@@ -1,0 +1,31 @@
+'use client';
+
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+
+type AnimatedSectionProps = {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+};
+
+export function AnimatedSection({
+  children,
+  className,
+  delay = 0,
+}: AnimatedSectionProps) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
+
+  return (
+    <motion.section
+      ref={ref}
+      className={className}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 50 }}
+      transition={{ duration: 0.6, delay, ease: 'easeOut' }}
+    >
+      {children}
+    </motion.section>
+  );
+}
