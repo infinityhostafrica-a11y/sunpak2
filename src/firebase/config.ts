@@ -10,6 +10,6 @@ export const firebaseConfig = {
   storageBucket: config.storageBucket || "project-4216dd3d-5288-4d40-ab5.firebasestorage.app",
   messagingSenderId: config.messagingSenderId || "834553201465",
   measurementId: config.measurementId || "",
-  firestoreDatabaseId: config.firestoreDatabaseId || "ai-studio-sunpakestate-8d5cc7d2-5d0f-4b21-8722-87d2e86a5cf6"
+  firestoreDatabaseId: config.firestoreDatabaseId || "ai-studio-sunpak2final-8409b2a9-f402-462a-b819-12c4518a365d"
 };
 

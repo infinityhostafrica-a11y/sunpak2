@@ -12,9 +12,14 @@ import { FirebaseClientProvider } from '@/firebase';
 import { FirebaseErrorListener } from '@/components/FirebaseErrorListener';
 
 export const metadata: Metadata = {
-  title: 'Sunpak Estate | Affordable Land & Property in Kenya',
+  title: 'Sunpak 2 Final',
   description:
-    'Secure your future with Sunpak Estate. We offer verified residential, agricultural, and commercial plots across Kenya with ready title deeds.',
+    'Sunpak Estate Kenya - Verified prime residential, commercial, and agricultural land in Kenya with ready freehold title deeds and flexible installment plans.',
+  openGraph: {
+    title: 'Sunpak 2 Final',
+    description:
+      'Sunpak Estate Kenya - Verified prime residential, commercial, and agricultural land in Kenya with ready freehold title deeds and flexible installment plans.',
+  },
 };
 
 export default function RootLayout({
